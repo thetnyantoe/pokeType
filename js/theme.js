@@ -14,8 +14,8 @@
     if (img) {
       img.src =
         theme === "dark"
-          ? "../assets/images/moon.svg"
-          : "../assets/images/sun.svg";
+          ? assetPath("/assets/images/moon.svg")
+          : assetPath("/assets/images/sun.svg");
       img.alt = theme === "dark" ? "Dark theme" : "Light theme";
     }
   }
@@ -42,6 +42,16 @@
     window.matchMedia("(prefers-color-scheme: dark)").matches;
   applyTheme(stored || (prefersDark ? "dark" : "light"));
 
+  function getSiteRoot() {
+    return (window.SITE_ROOT || "").replace(/\/$/, "");
+  }
+
+  function assetPath(path) {
+    const root = getSiteRoot();
+    if (!path.startsWith("/")) path = "/" + path;
+    return `${root}${path}`;
+  }
+
   function toggleTheme() {
     const current = document.documentElement.classList.contains("theme-dark")
       ? "dark"
@@ -67,8 +77,8 @@
 
       img.src =
         current === "dark"
-          ? "../assets/images/moon.svg"
-          : "../assets/images/sun.svg";
+          ? assetPath("/assets/images/moon.svg")
+          : assetPath("/assets/images/sun.svg");
 
       img.alt = current === "dark" ? "Dark theme" : "Light theme";
     }
