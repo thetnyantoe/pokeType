@@ -48,7 +48,7 @@
     btn.dataset.bound = "1";
   }
 
-  // run initNavToggle after DOM changes (navbar injected by main.js)
+  // run toggle after DOM changes
   document.addEventListener("DOMContentLoaded", initNavToggle);
   const mo = new MutationObserver(initNavToggle);
   mo.observe(document.body, { childList: true, subtree: true });
