@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Detail</title>
+
+    <style>
+      body {
+        margin: 0;
+        text-align: center;
+        padding-top: 20px;
+        font-family: Arial, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .detail-container {
+        position: relative;
+        width: 90%;
+        max-width: 550px;
+        margin: 50px auto;
+        padding-top: 200px;
+      }
+      .main-img {
+        position: absolute;
+        width: 40%;
+        max-width: 250px;
+        height: auto;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+      }
+
+      /* Arrows */
+      .arrow {
+        opacity: 0.3;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 100px;
+        cursor: pointer;
+        z-index: 3;
+      }
+
+      #aLeft {
+        left: 10%;
+      }
+      #aRight {
+        right: 10%;
+      }
+
+      /* Card */
+      .card {
+        background: white;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        width: auto;
+      }
+
+      /* Badges */
+      .badge-container {
+        margin-top: 35px;
+        position: relative;
+        z-index: 10;
+      }
+
+      .badge {
+        display: inline-block;
+        background: #ff4d4d;
+        color: white;
+        padding: 5px 12px;
+        border-radius: 20px;
+        margin: 0 5px;
+        font-size: 14px;
+      }
+
+      /* About Section */
+      .about {
+        margin-top: 40px;
+        font-weight: bold;
+        position: relative;
+        z-index: 10;
+      }
+
+      /* Info Row */
+      .info-row {
+        display: flex;
+        justify-content: space-around;
+        margin: 30px 0;
+        position: relative;
+        z-index: 10;
+      }
+
+      .info-row div p {
+        margin: 5px 0 0 0;
+        opacity: 0.4;
+      }
+
+      /* Bio text */
+      .bio {
+        margin: 20px 0;
+        font-size: 14px;
+      }
+
+      /* Base Stats */
+      .base-stats {
+        margin-top: 20px;
+        font-weight: bold;
+      }
+
+      /* Stat Row */
+      .stat-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+      }
+
+      .stat-label {
+        width: 120px;
+        text-align: left;
+        font-weight: bold;
+      }
+
+      .vl {
+        border-left: 1.5px solid green;
+        height: 20px;
+        margin: 0 5px;
+        display: inline-block;
+      }
+
+      /* Progress Bar */
+      .progress {
+        flex: 1;
+        height: 7px;
+        background: #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .progress-bar {
+        height: 100%;
+        background: #4caf50;
+      }
+      #pokemonName {
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="pokemonName"></h1>
+
+    <div class="detail-container">
+      <img src="./2.svg" class="main-img" alt="pokemon" />
+      <img src="./arrow-left-solid.svg" class="arrow" id="aLeft" />
+      <img src="./arrow-right-solid.svg" class="arrow" id="aRight" />
+
+      <div class="card">
+        <div class="badge-container">
+          <span class="badge">Grass</span>
+          <span class="badge">Poison</span>
+        </div>
+
+        <div class="about">About</div>
+
+        <div class="info-row"></div>
+
+        <div class="bio"></div>
+
+        <div class="base-stats">Base Stats</div>
+
+        <div class="stat-row">
+          <div class="stat-label">HP <span class="vl"></span> 78</div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 50%"></div>
+          </div>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat-label">Attack <span class="vl"></span> 80</div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 65%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./detail.js"></script>
+  </body>
+</html>

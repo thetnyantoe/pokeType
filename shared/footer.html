@@ -1,0 +1,78 @@
+<style>
+  .footer {
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-top: 100px; */
+    border-top: 0.2px solid var(--footer-border);
+    padding: 80px 20px;
+  }
+  .logoo {
+    font-weight: bolder;
+    color: #dfa84e;
+    font-family: "pokesolidFont", sans-serif;
+    font-size: 30px;
+    -webkit-text-stroke: 1.3px rgb(29, 74, 129);
+  }
+  .footerlink a {
+    text-decoration: none;
+    color: var(--about-text);
+    font-family: "bungeeFont", sans-serif;
+  }
+  .footerlink a:hover {
+    text-decoration: underline;
+    color: white;
+    transition-duration: 0.2s;
+  }
+  .footersec {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    max-width: 300px;
+  }
+  @media (max-width: 58rem) {
+  }
+  @media (max-width: 35rem) {
+    .footer {
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 10px;
+    }
+    .footersec {
+      width: 100%;
+      margin-top: 30px;
+      justify-content: space-between;
+    }
+  }
+</style>
+<footer class="footer">
+  <div>
+    <p class="logoo">PokeType</p>
+    <p
+      style="
+        color: var(--about-text);
+        font-size: 14px;
+        font-family: &quot;dotoFont&quot;, sans-serif;
+        margin-top: 15px;
+      "
+    >
+      © 2026 PokeType. Gotta Type ’em All!
+    </p>
+  </div>
+  <div class="footersec">
+    <div
+      style="display: flex; flex-direction: column; gap: 20px"
+      class="footerlink"
+    >
+      <a href="/">Home</a>
+      <a href="/play/index.html">Play</a>
+      <a href="/pokedex/index.html">Pokedex</a>
+    </div>
+    <div
+      style="display: flex; flex-direction: column; gap: 20px"
+      class="footerlink"
+    >
+      <a href="/about.html">About</a> <a href="/profile.html">Profile</a>
+    </div>
+  </div>
+</footer>

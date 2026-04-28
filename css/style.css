@@ -1,0 +1,489 @@
+@font-face {
+  font-family: "pokesolidFont";
+  src: url("/fonts/pokesolid.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "bitcountFont";
+  src: url("/fonts/bitcount.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "bungeeFont";
+  src: url("/fonts/bungee.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "dotoFont";
+  src: url("/fonts/doto.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "nableFont";
+  src: url("/fonts/nable.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "greatvibesFont";
+  src: url("/fonts/greatvibes.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: var(--bg-color, #0d0810);
+  overflow-x: hidden;
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroimage {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: 435px;
+}
+.heroimage1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 20px;
+  margin-left: 30px;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+}
+.heroimage1 img {
+  height: auto;
+  width: 180px;
+}
+.heroimage1 p {
+  color: rgb(132, 174, 50);
+  margin-left: 10px;
+  font-size: 40px;
+  font-family: "bitcountFont", sans-serif;
+}
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: -1;
+}
+
+.hero-content {
+  color: white;
+  text-align: center;
+}
+
+.title {
+  font-size: 120px;
+  font-weight: bolder;
+  color: #dfa84e;
+  font-family: "pokesolidFont", sans-serif;
+  -webkit-text-stroke: 4px rgb(29, 74, 129);
+}
+
+.description {
+  font-size: 22px;
+  max-width: 700px;
+  margin: 20px auto 0 auto;
+  line-height: 1.6;
+  text-align: center;
+  font-family: "dotoFont", sans-serif;
+  margin-bottom: 20px;
+}
+
+.btn1 {
+  color: #abebdc;
+  background-color: transparent;
+  border: 1.5px solid #abebdc;
+  text-decoration: none;
+  border-radius: 2px;
+  padding: 5px 15px 5px 15px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn1:hover {
+  background-color: #9acec2;
+  color: #754b49;
+  border-radius: 0 15px 0 15px;
+}
+.wave1 {
+  width: 100%;
+  position: absolute;
+  bottom: -30px;
+  z-index: 1;
+}
+
+:root {
+  --bg-color: #0d0810;
+  --text-color: #ffffff;
+  --title-color: #dfa84e;
+  --btn-color: #abebdc;
+  --nav-logo-color: #dfa84e;
+  --nav-link-color: rgb(223, 223, 223);
+  --nav-link-hover: #8eb53f;
+}
+
+.theme-light {
+  --bg-color: #f5f5f5;
+  --text-color: #111111;
+  --normal-text: #000;
+  --about-text: rgb(40, 40, 40);
+  --nav-logo-color: #0d0810;
+  --nav-link-color: #0d0810;
+  --nav-link-hover: #4a7a2a;
+  --footer-border: rgba(63, 63, 63, 0.2);
+}
+
+.theme-dark {
+  --bg-color: #0d0810;
+  --text-color: #ffffff;
+  --normal-text: #fff;
+  --about-text: rgb(214, 214, 214);
+  --nav-logo-color: #dfa84e;
+  --nav-link-color: rgb(223, 223, 223);
+  --nav-link-hover: #8eb53f;
+  --footer-border: rgba(255, 255, 255, 0.2);
+}
+
+/* 2nd */
+#section1 {
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 200px 0px 200px;
+}
+.section1box {
+  display: flex;
+  width: auto;
+  height: auto;
+}
+
+.pokedex {
+  font-size: 92px;
+  font-weight: bolder;
+  color: #df4e4e;
+  font-family: "bitcountFont", sans-serif;
+}
+.colorbox {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  flex: 6;
+  height: auto;
+  background-image: url("/assets/images/balls.gif");
+  border-radius: 10px;
+}
+
+/* 3rd */
+#section2 {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--normal-text);
+  font-size: 72px;
+  text-align: center;
+  padding: 0 50px;
+  font-family: "bitcountFont", sans-serif;
+}
+#section2 u {
+  font-family: "bitcountFont", sans-serif;
+}
+
+/* 4th */
+#section4 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 75vh;
+}
+.cardcontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+.card1 {
+  background-color: #ee5522;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3CradialGradient id='a' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23FB3'/%3E%3Cstop offset='1' stop-color='%23ee5522'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='0' y1='750' x2='1550' y2='750'%3E%3Cstop offset='0' stop-color='%23f7882b'/%3E%3Cstop offset='1' stop-color='%23ee5522'/%3E%3C/linearGradient%3E%3Cpath id='s' fill='url(%23b)' d='M1549.2 51.6c-5.4 99.1-20.2 197.6-44.2 293.6c-24.1 96-57.4 189.4-99.3 278.6c-41.9 89.2-92.4 174.1-150.3 253.3c-58 79.2-123.4 152.6-195.1 219c-71.7 66.4-149.6 125.8-232.2 177.2c-82.7 51.4-170.1 94.7-260.7 129.1c-90.6 34.4-184.4 60-279.5 76.3C192.6 1495 96.1 1502 0 1500c96.1-2.1 191.8-13.3 285.4-33.6c93.6-20.2 185-49.5 272.5-87.2c87.6-37.7 171.3-83.8 249.6-137.3c78.4-53.5 151.5-114.5 217.9-181.7c66.5-67.2 126.4-140.7 178.6-218.9c52.3-78.3 96.9-161.4 133-247.9c36.1-86.5 63.8-176.2 82.6-267.6c18.8-91.4 28.6-184.4 29.6-277.4c0.3-27.6 23.2-48.7 50.8-48.4s49.5 21.8 49.2 49.5c0 0.7 0 1.3-0.1 2L1549.2 51.6z'/%3E%3Cg id='g'%3E%3Cuse href='%23s' transform='scale(0.12) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.2) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.25) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(0.3) rotate(-20)'/%3E%3Cuse href='%23s' transform='scale(0.4) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(0.5) rotate(20)'/%3E%3Cuse href='%23s' transform='scale(0.6) rotate(60)'/%3E%3Cuse href='%23s' transform='scale(0.7) rotate(10)'/%3E%3Cuse href='%23s' transform='scale(0.835) rotate(-40)'/%3E%3Cuse href='%23s' transform='scale(0.9) rotate(40)'/%3E%3Cuse href='%23s' transform='scale(1.05) rotate(25)'/%3E%3Cuse href='%23s' transform='scale(1.2) rotate(8)'/%3E%3Cuse href='%23s' transform='scale(1.333) rotate(-60)'/%3E%3Cuse href='%23s' transform='scale(1.45) rotate(-30)'/%3E%3Cuse href='%23s' transform='scale(1.6) rotate(10)'/%3E%3C/g%3E%3C/defs%3E%3Cg transform='rotate(0 0 0)'%3E%3Cg transform='rotate(0 0 0)'%3E%3Ccircle fill='url(%23a)' r='3000'/%3E%3Cg opacity='0.5'%3E%3Ccircle fill='url(%23a)' r='2000'/%3E%3Ccircle fill='url(%23a)' r='1800'/%3E%3Ccircle fill='url(%23a)' r='1700'/%3E%3Ccircle fill='url(%23a)' r='1651'/%3E%3Ccircle fill='url(%23a)' r='1450'/%3E%3Ccircle fill='url(%23a)' r='1250'/%3E%3Ccircle fill='url(%23a)' r='1175'/%3E%3Ccircle fill='url(%23a)' r='900'/%3E%3Ccircle fill='url(%23a)' r='750'/%3E%3Ccircle fill='url(%23a)' r='500'/%3E%3Ccircle fill='url(%23a)' r='380'/%3E%3Ccircle fill='url(%23a)' r='250'/%3E%3C/g%3E%3Cg transform='rotate(0 0 0)'%3E%3Cuse href='%23g' transform='rotate(10)'/%3E%3Cuse href='%23g' transform='rotate(120)'/%3E%3Cuse href='%23g' transform='rotate(240)'/%3E%3C/g%3E%3Ccircle fill-opacity='0.1' fill='url(%23a)' r='3000'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 0 0 10px 0;
+  width: 30%;
+  height: 350px;
+  position: relative;
+  padding: 20px;
+}
+.card1 img {
+  position: absolute;
+  right: -20px;
+  bottom: -30px;
+  width: auto;
+  height: 60%;
+  transform: scaleX(-1);
+}
+.card2 {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23220000' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23440000' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23660000' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%23880000' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23A00' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  width: 30%;
+  height: 350px;
+  position: relative;
+  padding: 20px;
+}
+.card2 img {
+  position: absolute;
+  right: -20px;
+  bottom: -35px;
+  width: auto;
+  height: 55%;
+}
+.card3 {
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23230046' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%232f0052' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%233b075e' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%2348156a' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23552277' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  width: 30%;
+  height: 350px;
+  position: relative;
+  padding: 20px;
+}
+.card3 img {
+  position: absolute;
+  right: -20px;
+  bottom: -35px;
+  width: auto;
+  height: 55%;
+}
+#edge {
+  background-color: var(--bg-color);
+  width: 90px;
+  height: 80px;
+  position: absolute;
+  z-index: 1;
+  top: -50px;
+  left: -50px;
+  transform: rotate(45deg);
+}
+
+.gotoabout {
+  width: 100%;
+  text-align: center;
+}
+.gotoabout a {
+  color: white;
+  font-family: "bitcountFont", sans-serif;
+  font-size: 20px;
+  text-decoration: underline;
+}
+.gotoabout a:hover {
+  color: rgb(97, 146, 11);
+  transition-duration: 0.2s;
+}
+
+.linking {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: end;
+  padding-right: 50px;
+}
+#profilebanner {
+  width: 100%;
+  height: 30vh;
+  color: white;
+  margin: 200px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 72px;
+  text-shadow: 5px 5px #b32128;
+  position: relative;
+}
+#profilebanner p {
+  line-height: 40px;
+  font-family: "bitcountFont", sans-serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  text-align: center;
+  padding: 15px 20px;
+}
+.pokedexbtn {
+  background-color: #bcba34;
+  text-decoration: none;
+  border: none;
+  padding: 30px 150px 0 10px;
+  border-radius: 4px;
+  width: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: "bitcountFont", sans-serif;
+  font-size: 42px;
+  color: var(--normal-text);
+}
+.pokedexbtn:hover {
+  background-color: #e3e14d;
+  border-radius: 12px;
+  transition-duration: 0.2s;
+}
+.profilelink {
+  font-size: 14px;
+  text-shadow: none;
+  color: white;
+  font-weight: bold;
+  font-family: "dotoFont", sans-serif;
+}
+.profilelink:hover {
+  color: rgb(159, 222, 159);
+  transition-duration: 0.2s;
+}
+@media (max-width: 58rem) {
+  #section1 {
+    padding: 0 80px;
+  }
+  .section1box {
+    flex-direction: column;
+  }
+  .colorbox {
+    display: none;
+  }
+  .title {
+    font-size: 80px;
+    -webkit-text-stroke: 2px rgb(29, 74, 129);
+  }
+  .heroimage {
+    height: 360px;
+  }
+  .heroimage1 img {
+    width: 140px;
+  }
+  .heroimage1 p {
+    font-size: 30px;
+  }
+  .cardcontainer {
+    width: 90%;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .card1 {
+    width: 100%;
+  }
+  .card1 img {
+    right: 0;
+  }
+  .card2 {
+    width: 100%;
+  }
+  .card2 img {
+    right: 0;
+  }
+  .card3 {
+    width: 100%;
+  }
+  .card3 img {
+    right: 0;
+  }
+  .pokedex {
+    font-size: 72px;
+  }
+  #section2 {
+    font-size: 62px;
+    padding: 30px 0;
+  }
+  .linking {
+    margin: 0;
+  }
+  .gotoabout {
+    margin-top: 80px;
+  }
+  .description {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  #profilebanner {
+    font-size: 62px;
+  }
+  .pokedexbtn {
+    padding: 20px 100px 5px 5px;
+  }
+}
+
+@media (max-width: 40rem) {
+  #section1 {
+    padding: 0 20px;
+  }
+  .title {
+    font-size: 50px;
+    -webkit-text-stroke: 1px rgb(29, 74, 129);
+  }
+  .heroimage {
+    height: 260px;
+  }
+  .heroimage1 {
+    margin: 5px;
+  }
+  .heroimage1 img {
+    width: 100px;
+  }
+  .heroimage1 p {
+    font-size: 25px;
+  }
+  .sleeppokes {
+    display: none;
+  }
+  .pokedex {
+    font-size: 62px;
+  }
+  #section2 {
+    font-size: 48px;
+    padding: 20px 0;
+  }
+  .linking {
+    margin: 0;
+    margin-top: 50px;
+  }
+  .description {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  #profilebanner {
+    font-size: 52px;
+  }
+}

@@ -1,0 +1,195 @@
+<style>
+  .navbar {
+    position: fixed;
+    top: 8px;
+    width: 100vw;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+  }
+
+  .logo {
+    font-weight: bolder;
+    color: #dfa84e;
+    font-family: "pokesolidFont", sans-serif;
+    -webkit-text-stroke: 1.3px rgb(29, 74, 129);
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar.open ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 56px;
+    right: 0;
+    background: var(--bg-color, #0d0810);
+    width: 200px;
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  /* hamburger button */
+  #navToggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+  #navToggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 4px 0;
+    background: var(--normal-text);
+    transition:
+      transform 0.25s ease,
+      opacity 0.2s ease,
+      top 0.25s ease,
+      left 0.25s ease;
+    position: relative;
+  }
+
+  .navbar ul li a {
+    text-decoration: none;
+    color: var(--normal-text);
+    font-size: 22px;
+    font-family: "bitcountFont", sans-serif;
+    transition: 0.2s;
+  }
+
+  .navbar ul li a:hover {
+    color: #8eb53f;
+  }
+
+  #navbarAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  @media (max-width: 992px) {
+    .navbar {
+      padding: 0 40px;
+    }
+
+    .navbar ul li a {
+      font-size: 18px;
+    }
+
+    .navbar ul {
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .navbar {
+      gap: 10px;
+      padding: 10px 0;
+      justify-content: center;
+    }
+
+    .navbar ul {
+      gap: 15px;
+      width: 100vw;
+      justify-content: space-around;
+    }
+
+    .navbar ul li a {
+      font-size: 16px;
+    }
+    .logo {
+      display: none;
+    }
+    /* show hamburger */
+    #navToggle {
+      display: block;
+      position: absolute;
+      z-index: 99;
+      right: 20px;
+      top: 12px;
+    }
+    .navbar ul {
+      display: none;
+    }
+    .navbar.open ul {
+      display: flex;
+      border-radius: 5px;
+      margin-right: 10px;
+      background: rgba(165, 165, 165, 0.4);
+    }
+
+    .navbar.open #navToggle .bar:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+    .navbar.open #navToggle .bar:nth-child(2) {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    .navbar.open #navToggle .bar:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+  }
+</style>
+<nav class="navbar">
+  <a href="/" style="text-decoration: none"
+    ><h2
+      class="logo"
+      style="font-family: &quot;pokesolidFont&quot;, sans-serif"
+    >
+      PokeType
+    </h2></a
+  >
+  <ul>
+    <li><a href="/">HOME</a></li>
+    <li><a href="/play/index.html">PLAY</a></li>
+    <li><a href="/pokedex/index.html">POKEDEX</a></li>
+    <li><a href="/about.html">ABOUT</a></li>
+    <li>
+      <a href="/profile.html"
+        ><img
+          id="navbarAvatar"
+          src=""
+          alt="a"
+          style="width: 40px; height: 40px; border-radius: 30px"
+      /></a>
+    </li>
+
+    <li>
+      <button
+        id="themeToggle"
+        aria-label="Toggle theme"
+        style="
+          background: transparent;
+          border: none;
+          color: inherit;
+          cursor: pointer;
+          padding: 4px;
+        "
+      >
+        <img
+          id="themeToggleImg"
+          src="/assets/images/sun.svg"
+          alt="Toggle theme"
+          style="width: 22px; height: 22px; display: block"
+        />
+      </button>
+    </li>
+  </ul>
+  <!-- hamburger icon for mobile -->
+  <button id="navToggle" aria-label="Open menu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+</nav>

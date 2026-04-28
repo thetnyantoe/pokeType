@@ -1,0 +1,142 @@
+#sec1 {
+  height: 35vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+#sec2 {
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 130px;
+}
+
+#sec3 {
+  margin-top: 140px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.temp span {
+  font-family: "dotoFont", sans-serif;
+}
+
+#sec4 {
+  margin: 100px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.credits p {
+  font-family: "bitcountFont", sans-serif;
+}
+.card1container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card1text {
+  color: var(--about-text);
+  font-family: "bungeeFont", sans-serif;
+  font-size: 20px;
+  max-width: 500px;
+  line-height: 35px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.card1text h1 {
+  font-family: "bitcountFont", sans-serif;
+  margin-bottom: 30px;
+  color: #50a8b4;
+  font-size: 50px;
+}
+
+.card2container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row-reverse;
+}
+.card2text {
+  color: var(--about-text);
+  font-family: "bungeeFont", sans-serif;
+  font-size: 20px;
+  max-width: 500px;
+  line-height: 35px;
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 10px;
+  z-index: 70;
+}
+.card2text h1 {
+  font-family: "bitcountFont", sans-serif;
+  margin-bottom: 30px;
+  color: #8cc456;
+  font-size: 50px;
+}
+.card2 img {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: auto;
+  height: 85%;
+  transform: scaleX(-1);
+}
+.card3 img {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: auto;
+  height: 80%;
+  transform: scaleX(-1);
+}
+@media (max-width: 58rem) {
+  .card1text {
+    font-size: 18px;
+  }
+  .card2text {
+    font-size: 18px;
+  }
+  .card2 img {
+    height: 60%;
+  }
+  .card3 img {
+    height: 60%;
+  }
+  #sec2 {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 40rem) {
+  .card1text {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .card2text {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .card1text h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .card2text h1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .card1container {
+    flex-direction: column;
+  }
+  .card2container {
+    flex-direction: column;
+  }
+  .card2 img {
+    height: 60%;
+  }
+  .card3 img {
+    height: 60%;
+  }
+  #sec2 {
+    padding: 0 15px;
+  }
+}

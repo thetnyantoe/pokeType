@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeType</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/png" href="./assets/images/pokeball.png" />
+  </head>
+  <body>
+    <div id="navbar" style="z-index: 20"></div>
+    <section class="hero">
+      <video autoplay muted loop playsinline class="bg-video">
+        <source src="/assets/videos/hero.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Content -->
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="title">PokeType</h1>
+
+          <div>
+            <p class="description">Gotta Type 'em All!</p>
+            <a class="btn1" href="/play/">Catch 'em</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay"></div>
+      <div class="heroimage1">
+        <img src="/assets/images/t.gif" alt="" />
+        <p>TYPE!<br />CATCH!<br />COLLECT!</p>
+      </div>
+      <img src="/assets/images/heros.png" class="heroimage" alt="" />
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        class="wave1"
+      >
+        <path
+          fill="#0d0810"
+          fill-opacity="1"
+          d="M0,192L60,192C120,192,240,192,360,213.3C480,235,600,277,720,293.3C840,309,960,299,1080,293.3C1200,288,1320,288,1380,288L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+
+    <!-- 2nd -->
+    <section id="section1">
+      <div class="section1box">
+        <div
+          style="
+            height: 100%;
+            flex: 6;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            position: relative;
+          "
+        >
+          <p class="pokedex">Pokedex</p>
+          <p
+            style="
+              font-size: 40px;
+              color: var(--normal-text);
+              font-weight: bolder;
+              font-family: &quot;dotoFont&quot;, sans-serif;
+            "
+          >
+            Search all available pokemon to enhance your PokeKnowledge!
+          </p>
+          <a class="pokedexbtn" href="/pokedex/">Go></a>
+          <img
+            src="/assets/images/sleeppokes1.png"
+            style="
+              position: absolute;
+              width: auto;
+              height: 400px;
+              right: 30px;
+              bottom: -100px;
+            "
+            class="sleeppokes"
+            alt=""
+          />
+        </div>
+
+        <div class="colorbox">
+          <div
+            style="
+              position: absolute;
+              top: 0;
+              right: 0;
+              border-radius: 0 10px;
+              height: 120px;
+              width: 120px;
+              background-color: var(--bg-color);
+            "
+          ></div>
+          <div
+            style="
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              border-radius: 0 10px;
+              height: 120px;
+              width: 120px;
+              background-color: var(--bg-color);
+            "
+          ></div>
+        </div>
+      </div>
+    </section>
+    <!-- 3rd -->
+    <section id="section2">
+      Catch Pokémons by typing their names before they reach you!
+    </section>
+    <div class="linking">
+      <img
+        src="/assets/images/linking.png"
+        style="height: 450px; width: auto"
+        alt=""
+      />
+    </div>
+
+    <!-- 4 -->
+    <div
+      style="
+        color: white;
+        text-align: center;
+        width: 100%;
+        margin: 100px 0 30px 0;
+      "
+    >
+      <p
+        style="font-family: &quot;nableFont&quot;, sans-serif; font-size: 52px"
+      >
+        How the Game Works
+      </p>
+      <p
+        style="
+          font-size: 18px;
+          font-family: &quot;dotoFont&quot;, sans-serif;
+          margin: 20px 10px;
+          position: relative;
+          z-index: 2;
+        "
+      >
+        Challenge your speed, sharpen your skills, and have fun catching them
+        all.
+      </p>
+    </div>
+    <section id="section4">
+      <div class="cardcontainer">
+        <div class="card1">
+          <div id="edge"></div>
+          <div
+            style="
+              font-family: &quot;bungeeFont&quot;, sans-serif;
+              color: white;
+              padding-top: 30px;
+              font-size: 32px;
+            "
+          >
+            Rushing Pokémon towards you
+          </div>
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/149.svg"
+            alt=""
+          />
+        </div>
+        <div class="card2">
+          <div id="edge"></div>
+          <div
+            style="
+              font-family: &quot;bungeeFont&quot;;
+              color: white;
+              padding-top: 30px;
+              font-size: 32px;
+            "
+          >
+            Accurate and Qucik Typing
+          </div>
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/250.svg"
+            alt=""
+          />
+        </div>
+        <div class="card3">
+          <div id="edge"></div>
+          <div
+            style="
+              font-family: &quot;bungeeFont&quot;;
+              color: white;
+              padding-top: 30px;
+              font-size: 32px;
+            "
+          >
+            Survive each wave and advance
+          </div>
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/649.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <div class="gotoabout">
+      <a href="/about.html" class="alink">Find out more ></a>
+    </div>
+    <div id="profilebanner">
+      <p>
+        Check Your Profile Stats! <br />
+        <a href="/profile.html" class="profilelink">Profile ></a>
+      </p>
+      <img
+        src="/assets/images/snorlax.png"
+        style="position: absolute; height: 85%"
+        alt=""
+      />
+    </div>
+    <div id="footer"></div>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
