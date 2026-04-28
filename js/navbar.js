@@ -16,7 +16,7 @@
     const tester = new Image();
     tester.onload = () => elements.forEach((el) => (el.src = src));
     tester.onerror = () =>
-      elements.forEach((el) => (el.src = "/assets/images/balls.gif"));
+      elements.forEach((el) => (el.src = "../assets/images/balls.gif"));
     tester.src = src;
   }
 
