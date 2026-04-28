@@ -13,7 +13,9 @@
     const img = document.getElementById("themeToggleImg");
     if (img) {
       img.src =
-        theme === "dark" ? "/assets/images/moon.svg" : "/assets/images/sun.svg";
+        theme === "dark"
+          ? "../assets/images/moon.svg"
+          : "../assets/images/sun.svg";
       img.alt = theme === "dark" ? "Dark theme" : "Light theme";
     }
   }
@@ -65,8 +67,8 @@
 
       img.src =
         current === "dark"
-          ? "/assets/images/moon.svg"
-          : "/assets/images/sun.svg";
+          ? "../assets/images/moon.svg"
+          : "../assets/images/sun.svg";
 
       img.alt = current === "dark" ? "Dark theme" : "Light theme";
     }
