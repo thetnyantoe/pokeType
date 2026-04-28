@@ -20,7 +20,7 @@ fetch("/shared/navbar.html")
   .catch((err) => console.error("Failed to load navbar", err));
 
 // Load footer
-fetch("/shared/footer.html")
+fetch("../shared/footer.html")
   .then((res) => res.text())
   .then((data) => {
     const footEl = document.getElementById("footer");

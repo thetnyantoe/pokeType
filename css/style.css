@@ -1,36 +1,36 @@
 @font-face {
   font-family: "pokesolidFont";
-  src: url("/fonts/pokesolid.ttf") format("truetype");
+  src: url("../fonts/pokesolid.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "bitcountFont";
-  src: url("/fonts/bitcount.ttf") format("truetype");
+  src: url("../fonts/bitcount.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "bungeeFont";
-  src: url("/fonts/bungee.ttf") format("truetype");
+  src: url("../fonts/bungee.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "dotoFont";
-  src: url("/fonts/doto.ttf") format("truetype");
+  src: url("../fonts/doto.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "nableFont";
-  src: url("/fonts/nable.ttf") format("truetype");
+  src: url("../fonts/nable.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "greatvibesFont";
-  src: url("/fonts/greatvibes.ttf") format("truetype");
+  src: url("../fonts/greatvibes.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -205,7 +205,7 @@ body {
   position: relative;
   flex: 6;
   height: auto;
-  background-image: url("/assets/images/balls.gif");
+  background-image: url("../assets/images/balls.gif");
   border-radius: 10px;
 }
 
