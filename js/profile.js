@@ -3,10 +3,10 @@ const selectedAvatar = document.getElementById("selectedAvatar");
 let showBtn = document.getElementById("showAvatarsBtn");
 
 const extraImageMap = {
-  "N.jpg": "../assets/images/N1.png",
-  "cynthia.jpg": "../assets/images/cynthia1.png",
-  "leon.jpg": "../assets/images/leon1.webp",
-  "iono.jpg": "../assets/images/iono1.webp",
+  "N.jpg": "/pokeType/assets/images/N1.png",
+  "cynthia.jpg": "/pokeType/assets/images/N1.png",
+  "leon.jpg": "/pokeType/assets/images/N1.png",
+  "iono.jpg": "/pokeType/assets/images/N1.png",
 };
 
 const selectedNameEl = document.getElementById("selectedName");
