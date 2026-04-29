@@ -28,6 +28,8 @@
     });
   }
 
+  window.setAvatarSrc = setAvatarSrc;
+
   // hamburger toggle for small screens
   function initNavToggle() {
     const btn = document.getElementById("navToggle");

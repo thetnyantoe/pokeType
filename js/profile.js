@@ -48,6 +48,9 @@ avatars.forEach((avatar) => {
     avatars.forEach((av) => av.classList.remove("selected"));
     avatar.classList.add("selected");
     if (popup) popup.style.display = "none";
+    if (window.setAvatarSrc) {
+      window.setAvatarSrc(avatar.src);
+    }
   });
 });
 
