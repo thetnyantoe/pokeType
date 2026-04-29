@@ -31,6 +31,7 @@
       .help-button:hover {
         background: rgba(255, 255, 255, 0.22);
       }
+
       .redbtn {
         --primary: 255, 90, 120;
         --secondary: 150, 50, 60;
@@ -86,6 +87,7 @@
         transform: translateY(0%);
         box-shadow: 0 0;
       }
+
       .floating {
         animation-name: floating;
         animation-duration: 0.8s;
@@ -127,12 +129,12 @@
       id="ssection"
     >
       <div>
-        <a href="./play.html"
-          ><button class="redbtn">
-            <a href="../about.html" id="helpButton" class="help-button">?</a>
-            <span class="front"></span></button
-        ></a>
-        <script src="../js/main.js"></script>
+        <a href="./play.html">
+          <button class="redbtn" type="button">
+            <span class="back"></span>
+            <span class="front"></span>
+          </button>
+        </a>
         <p
           style="
             color: white;
